@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - Laser
+  - Crab
+  - Octopus
+  - Jumper
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - Player
+  - Enemies
+  - Background
+  - Laser
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3891393767
+    locked: 0
+  - name: Ground
+    uniqueID: 1276164563
+    locked: 0
+  - name: Props
+    uniqueID: 2043732399
+    locked: 0
+  - name: Enemies
+    uniqueID: 3062943315
+    locked: 0
+  - name: Player
+    uniqueID: 1706243317
+    locked: 0
+  - name: Laser
+    uniqueID: 3500872401
+    locked: 0
+  - name: Front Props
+    uniqueID: 4153822721
+    locked: 0
