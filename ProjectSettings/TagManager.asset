@@ -21,7 +21,7 @@ TagManager:
   - Enemies
   - Background
   - Laser
-  - 
+  - Gate
   - 
   - 
   - 
@@ -52,7 +52,7 @@ TagManager:
   - name: Ground
     uniqueID: 1276164563
     locked: 0
-  - name: Props
+  - name: Clutter
     uniqueID: 2043732399
     locked: 0
   - name: Enemies

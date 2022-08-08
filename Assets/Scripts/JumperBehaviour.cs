@@ -34,13 +34,15 @@ public class JumperBehaviour : MonoBehaviour
             } 
         }
         else if(!isAlive && !isDead)
-        Die();
+        {
+            Die();
+            enemyRigidbody.velocity = Vector2.zero;
+        }
     }
 
     void Die()
     {
         isDead = true;
-        enemyRigidbody.velocity = Vector2.zero;
         enemyCollider.enabled = false;
         enemyRigidbody.gravityScale = 0;
         enemyAnimator.SetTrigger("isDead");

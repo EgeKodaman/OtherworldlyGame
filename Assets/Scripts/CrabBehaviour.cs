@@ -27,13 +27,15 @@ public class CrabBehaviour : MonoBehaviour
         if(isAlive)
         MoveEnemy();
         else if(!isAlive && !isDead)
-        Die();
+        {
+            Die();
+            enemyRigidbody.velocity = Vector2.zero;
+        }
     }
 
     void Die()
     {
         isDead = true;
-        enemyRigidbody.velocity = Vector2.zero;
         enemyCollider.enabled = false;
         enemyAnimator.SetTrigger("isDead");
         AudioSource.PlayClipAtPoint(deathSound, transform.position);

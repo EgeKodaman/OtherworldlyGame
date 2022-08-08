@@ -9,6 +9,7 @@ public class SettingPersist : MonoBehaviour
     public Color32 playerColor = new Color32(255, 255, 255, 255);
     public bool skinBought = false;
     public int goldAmount = 0;
+    public bool hasDied = false;
 
     public SettingPersist GetInstance()
     {

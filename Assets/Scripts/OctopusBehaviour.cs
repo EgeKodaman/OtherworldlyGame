@@ -29,13 +29,15 @@ public class OctopusBehaviour : MonoBehaviour
             StartCoroutine("MoveEnemy");
         }
         else if(!isAlive && !isDead)
-        Die();
+        {
+            Die();
+            enemyRigidbody.velocity = Vector2.zero;
+        }
     }
 
     void Die()
     {
         isDead = true;
-        enemyRigidbody.velocity = Vector2.zero;
         enemyCollider.enabled = false;
         enemyAnimator.SetTrigger("isDead");
         AudioSource.PlayClipAtPoint(deathSound, transform.position);
@@ -48,7 +50,7 @@ public class OctopusBehaviour : MonoBehaviour
         coroutineStarted = true;
         yield return new WaitForSecondsRealtime(3f);
         enemyRigidbody.velocity = new Vector2(flySpeed, 0f);
-        transform.localScale = new Vector3(Mathf.Sign(flySpeed), 1f, 1f);
+        transform.localScale = new Vector3(Mathf.Sign(flySpeed) * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         flySpeed = -flySpeed;
         coroutineStarted = false;
     }

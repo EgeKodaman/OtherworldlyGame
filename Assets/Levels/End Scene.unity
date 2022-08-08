@@ -257,7 +257,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Try Again
+  m_text: Play Again
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a36f962650c03c44b8abf308bbceefbe, type: 2}
   m_sharedMaterial: {fileID: 2186638523117346624, guid: a36f962650c03c44b8abf308bbceefbe, type: 2}
@@ -1310,6 +1310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerGold: {fileID: 4592777441474476895}
   price: {fileID: 4592777441534134090}
+  endText: {fileID: 1497534302}
 --- !u!222 &4592777440963130466
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1732,7 +1733,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 5000
+  m_text: 1000
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a36f962650c03c44b8abf308bbceefbe, type: 2}
   m_sharedMaterial: {fileID: 2186638523117346624, guid: a36f962650c03c44b8abf308bbceefbe, type: 2}

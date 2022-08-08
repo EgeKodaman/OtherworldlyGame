@@ -14,6 +14,7 @@ public class GameSession : MonoBehaviour
     [SerializeField] Image firstLife;
     SettingPersist setting;
     public bool poweredUp = false;
+    public bool hasKey = false;
     public int laserDamage = 1;
 
     void Awake()
@@ -59,6 +60,7 @@ public class GameSession : MonoBehaviour
     IEnumerator EndGameSession()
     {
         yield return new WaitForSecondsRealtime(2f);
+        setting.GetInstance().hasDied = true;
         SceneManager.LoadScene(2);
     }
 
